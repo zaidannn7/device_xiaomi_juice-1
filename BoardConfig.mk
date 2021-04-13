@@ -132,7 +132,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Sepolicy
-TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
+include device/qcom/sepolicy/SEPolicy.mk
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Treble
 BOARD_VNDK_VERSION := current
