@@ -35,6 +35,17 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     com.dsi.ant@1.0
 
+# Audio
+PRODUCT_PACKAGES += \
+    libaudiohal \
+    vendor.qti.hardware.audiohalext-utils
+
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    libaacwrapper \
+    libfmq \
+    tinymix
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap
