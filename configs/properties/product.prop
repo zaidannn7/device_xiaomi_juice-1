@@ -3,6 +3,9 @@ persist.sys.sf.disable_blurs=1
 ro.surface_flinger.supports_background_blur=1
 ro.sf.blurs_are_expensive=1
 
+# Camera
+persist.vendor.camera.logInfoMask=false
+
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 ro.vendor.qti.am.reschedule_service=true
