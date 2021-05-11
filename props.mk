@@ -91,3 +91,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.media.transcoding.codec_max_operating_rate_720P=60 \
     debug.media.transcoding.codec_max_operating_rate_1080P=60
+
+# Zygote preforking
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.device_config.runtime_native.usap_pool_enabled=true
