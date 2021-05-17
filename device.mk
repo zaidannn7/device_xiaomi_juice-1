@@ -60,6 +60,9 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
 
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
