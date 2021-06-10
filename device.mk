@@ -117,6 +117,14 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.2 \
     android.hardware.neuralnetworks@1.2.vendor
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service \
+    com.android.nfc_extras \
+    NfcNci \
+    SecureElement \
+    Tag
+
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
