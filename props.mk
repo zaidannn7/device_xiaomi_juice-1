@@ -19,8 +19,16 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     dalvik.vm.dex2oat64.enabled=true
 
+# DRM
+PRODUCT_PRODUCT_PROPERTIES += \
+    drm.service.enabled=true
+
 # IMS
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
+
+# Netflix custom property
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.netflix.bsp_rev=Q6115-31409-1
