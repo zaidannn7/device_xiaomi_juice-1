@@ -29,6 +29,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
+# Media
+PRODUCT_PRODUCT_PROPERTIES += \
+    vendor.audio.offload.buffer.size.kb=256
+
 # Netflix custom property
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.netflix.bsp_rev=Q6115-31409-1
