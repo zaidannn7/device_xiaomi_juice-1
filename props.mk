@@ -29,6 +29,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
+# Kill off IMS logspam with fire
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.ims.disableADBLogs=1 \
+    persist.vendor.ims.disableDebugLogs=1 \
+    persist.vendor.ims.disableIMSLogs=1 \
+    persist.vendor.ims.disableQXDMLogs=1
+
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
     vendor.audio.offload.buffer.size.kb=256
