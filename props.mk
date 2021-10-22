@@ -54,6 +54,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
+    debug.sdm.support_writeback=0 \
+    debug.sf.disable_client_composition_cache=1 \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
     debug.cpurend.vsync=false \
     vendor.display.disable_offline_rotator=1 \
