@@ -32,6 +32,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
+    ro.hwui.use_vulkan=1 \
+    debug.renderengine.backend=skiaglthreaded \
+    renderthread.skia.reduceopstasksplitting=true \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # IMS
