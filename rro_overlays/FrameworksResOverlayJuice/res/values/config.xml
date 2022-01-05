@@ -740,4 +740,8 @@
 
     <!-- Indicates whether device has a power button fingerprint sensor. -->
     <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
+
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_default">85px</dimen>
+    <dimen name="status_bar_height_portrait">85px</dimen>
 </resources>
