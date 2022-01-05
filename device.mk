@@ -113,10 +113,6 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.2 \
     android.hardware.neuralnetworks@1.2.vendor
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
@@ -130,6 +126,15 @@ PRODUCT_PACKAGES += \
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
+
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlayJuice \
+    FrameworksResOverlayJuice \
+    NotchBarKiller \
+    SettingsOverlayJuice \
+    SystemUIOverlayJuice \
+    TelephonyOverlayJuice
 
 # Sensors
 PRODUCT_PACKAGES += \
