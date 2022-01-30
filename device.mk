@@ -136,6 +136,10 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
