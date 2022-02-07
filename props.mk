@@ -32,6 +32,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
+    vendor.display.disable_rotator_downscale=1 \
     debug.renderengine.backend=skiaglthreaded \
     debug.hwui.renderer=skiagl \
     renderthread.skia.reduceopstasksplitting=true \
