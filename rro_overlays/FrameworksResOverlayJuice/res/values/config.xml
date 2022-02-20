@@ -488,7 +488,7 @@
     <integer name="config_screenBrightnessDoze">22</integer>
 
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
-     <integer name="config_shutdownBatteryTemperature">600</integer>
+    <integer name="config_shutdownBatteryTemperature">600</integer>
 
     <!-- ComponentName of a dream to show whenever the system would otherwise have
          gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
@@ -498,7 +498,7 @@
          Specify the component name or an empty string if none.
          Note that doze dreams are not subject to the same start conditions as ordinary dreams.
          Doze dreams will run whenever the power manager is in a dozing state. -->
-    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+    <string name="config_dozeComponent" translatable="false">com.android.systemui/com.android.systemui.doze.DozeService</string>
 
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
@@ -645,18 +645,18 @@
     <!-- Import from FrameworksResCommon -->
     <bool name="config_wifi_dual_sap_mode_enabled">false</bool>
     <bool name="config_wifi_wap3_sap_mode_enabled">true</bool>
-    <string name="config_persistentDataPackageName">com.google.android.gms</string>
+    <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
     <!-- Telephony qualified networks service package name to bind to by default. -->
-    <string name="config_qualified_networks_service_package">vendor.qti.iwlan</string>
+    <string name="config_qualified_networks_service_package" translatable="false">vendor.qti.iwlan</string>
 
     <!-- IWLAN data service package name to bind to by default. If none is specified in an overlay, an
          empty string is passed in -->
-    <string name="config_wlan_data_service_package">vendor.qti.iwlan</string>
+    <string name="config_wlan_data_service_package" translatable="false">vendor.qti.iwlan</string>
 
     <!-- IWLAN network service package name to bind to by default. If none is specified in an overlay, an
          empty string is passed in -->
-    <string name="config_wlan_network_service_package">vendor.qti.iwlan</string>
+    <string name="config_wlan_network_service_package" translatable="false">vendor.qti.iwlan</string>
 
     <!-- If this is true, long press on power button will be available from the non-interactive state -->
     <bool name="config_supportLongPressPowerWhenNonInteractive">true</bool>
@@ -676,5 +676,5 @@
 
     <!-- Whether the display cutout region of the main built-in display should be forced to
          black in software (to avoid aliasing or emulate a cutout that is not physically existent). -->
-    <string name="config_mainBuiltInDisplayCutout">M -90,0 L -90,78 L 90,78 L 90,0 Z</string>
+    <string name="config_mainBuiltInDisplayCutout" translatable="false">M -90,0 L -90,78 L 90,78 L 90,0 Z</string>
 </resources>
