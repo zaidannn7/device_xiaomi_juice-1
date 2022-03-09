@@ -55,6 +55,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
+# IORap
+PRODUCT_PRODUCT_PROPERTIES += \
+    iorapd.perfetto.enable=true \
+    persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
+
 # Kill off IMS logspam with fire
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.ims.disableADBLogs=1 \
