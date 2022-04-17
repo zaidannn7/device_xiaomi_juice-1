@@ -14,6 +14,13 @@ on init
 on post-fs
     mount none /vendor/lost+found /vendor/overlay bind
 
+on boot
+# Force enable DT2W
+    chmod 0777 /sys
+    chmod 0755 /sys/touchpanel
+    chown system system /sys/touchpanel/double_tap
+    chmod 0600 /sys/touchpanel/double_tap
+
 on property:sys.boot_completed=1
     # Reset schedtune globally
     write /dev/stune/schedtune.prefer_idle 0
