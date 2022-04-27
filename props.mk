@@ -22,6 +22,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     dalvik.vm.isa.arm64.variant=cortex-a73 \
     dalvik.vm.isa.arm.variant=cortex-a73
 
+# Debug
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.traced.enable=0
+
 # Dex2oat
 PRODUCT_PRODUCT_PROPERTIES += \
     dalvik.vm.dex2oat64.enabled=true
