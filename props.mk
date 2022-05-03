@@ -1,3 +1,8 @@
+# ART
+PRODUCT_PRODUCT_PROPERTIES += \
+    dalvik.vm.dex2oat-filter=speed-profile \
+    dalvik.vm.image-dex2oat-filter=speed-profile
+
 # Bluetooth
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.bt.enableAptXHD=true \
@@ -52,6 +57,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.renderengine.backend=skiaglthreaded \
     renderthread.skia.reduceopstasksplitting=true \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
+# GO
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.lmk.use_minfree_levels=true \
+    ro.lmk.use_psi=true \
+    ro.config.low_ram=false \
+    ro.lmk.log_stats=false
 
 # IMS
 PRODUCT_PRODUCT_PROPERTIES += \
