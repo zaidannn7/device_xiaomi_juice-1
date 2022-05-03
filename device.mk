@@ -60,6 +60,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# Dex
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -76,6 +79,16 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0 \
     android.hardware.gnss.visibility_control@1.0.vendor
+
+# GO
+ART_BUILD_HOST_DEBUG := false
+ART_BUILD_HOST_NDEBUG := true
+ART_BUILD_TARGET_DEBUG := false
+ART_BUILD_TARGET_NDEBUG := true
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Health
 PRODUCT_PACKAGES += \
