@@ -50,6 +50,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
+    debug.cpurend.vsync=false \
     vendor.display.disable_offline_rotator=1 \
     debug.sf.latch_unsignaled=1 \
     vendor.display.disable_rotator_downscale=1 \
