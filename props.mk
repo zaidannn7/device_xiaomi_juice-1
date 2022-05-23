@@ -15,6 +15,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.bluetooth.library_name=libbluetooth_qti.so \
     vendor.bluetooth.soc=cherokee
 
+# Cached app compaction
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.device_config.activity_manager.use_compaction=true
+
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.quick.charge=1 \
