@@ -54,6 +54,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.max_virtual_display_dimension=4096 \
     debug.cpurend.vsync=false \
     vendor.display.disable_offline_rotator=1 \
     debug.sf.latch_unsignaled=1 \
@@ -108,6 +109,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.media.transcoding.codec_max_operating_rate_720P=60 \
     debug.media.transcoding.codec_max_operating_rate_1080P=60
+
+# WFD
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.sf.enable_hwc_vds=1 \
+    media.wfd.max_resolution=8 \
+    persist.debug.wfd.enable=1
 
 # Zygote preforking
 PRODUCT_PRODUCT_PROPERTIES += \
