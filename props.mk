@@ -97,6 +97,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.netflix.bsp_rev=Q6115-31409-1
 
+# OEM Unlock
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.oem_unlock_supported=0
+
 # RCS
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.rcs.supported=1
