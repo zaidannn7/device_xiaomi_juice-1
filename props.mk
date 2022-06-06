@@ -105,6 +105,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.rcs.supported=1
 
+# Surfaceflinger Offsets
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.sf.high_fps_early_gl_phase_offset_ns=-2000000 \
+    debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
+
 # System
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.binary_xml=false
