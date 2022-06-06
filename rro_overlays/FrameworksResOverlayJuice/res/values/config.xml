@@ -1014,6 +1014,12 @@
          black in software (to avoid aliasing or emulate a cutout that is not physically existent). -->
     <string name="config_mainBuiltInDisplayCutout" translatable="false">M -90,0 L -90,78 L 90,78 L 90,0 Z</string>
 
+    <!-- Flag indicating whether the surface flinger has limited
+         alpha compositing functionality in hardware.  If set, the window
+         manager will disable alpha trasformation in animations where not
+         strictly needed. -->
+    <bool name="config_sf_limitedAlpha">true</bool>
+
     <!-- List of comma separated package names for 
     which we the system will not show crash, ANR,
          etc. dialogs. --> 
