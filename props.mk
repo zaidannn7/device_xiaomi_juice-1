@@ -101,6 +101,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.oem_unlock_supported=0
 
+# Other
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.radio.add_power_save=1
+
 # RCS
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.rcs.supported=1
