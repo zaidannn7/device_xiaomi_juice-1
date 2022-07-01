@@ -143,8 +143,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # IORap
 PRODUCT_PRODUCT_PROPERTIES += \
-    iorapd.perfetto.enable=true \
-    persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
+    iorapd.perfetto.enable=false
 
 # Kill off IMS logspam with fire
 PRODUCT_PRODUCT_PROPERTIES += \
