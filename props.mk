@@ -110,6 +110,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # GO
 PRODUCT_PRODUCT_PROPERTIES += \
+    ro.lmk.filecache_min_kb=153600 \
+    ro.lmk.stall_limit_critical=40 \
     ro.lmk.use_minfree_levels=false \
     ro.lmk.use_psi=true \
     ro.config.low_ram=false \
