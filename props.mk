@@ -188,6 +188,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.radio.add_power_save=1
 
+# Perf
+PRODUCT_PRODUCT_PROPERTIES += \
+    vendor.audio.feature.kpi_optimize.enable=false
+
 # Phantom process monitoring
 PRODUCT_PRODUCT_PROPERTIES += \
     sys.fflag.override.settings_enable_monitor_phantom_procs=false
