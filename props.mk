@@ -236,6 +236,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # System
 PRODUCT_PRODUCT_PROPERTIES += \
+    ro.apex.updatable=false \
     tombstoned.max_tombstone_count=50 \
     persist.sys.binary_xml=false
 
