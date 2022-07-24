@@ -233,6 +233,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.build.shutdown_timeout=2
 
+# Smooth Display
+PRODUCT_PRODUCT_PROPERTIES += \
+    vendor.display.defer_fps_frame_count=0 \
+    vendor.display.use_layer_ext=0 \
+    vendor.display.use_smooth_motion=0
+
 # System
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.binary_xml=false
