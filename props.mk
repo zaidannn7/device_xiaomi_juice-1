@@ -5,6 +5,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Bluetooth
 PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.btstack.enable.lpa=true \
     persist.bt.enableAptXHD=true \
     persist.vendor.bt.a2dp.aac_whitelist=false \
     persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac \
