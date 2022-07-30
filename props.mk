@@ -98,6 +98,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
+    debug.sf.disable_client_composition_cache=1 \
     ro.media.recorder-max-base-layer-fps=60 \
     debug.sdm.support_writeback=0 \
     ro.surface_flinger.max_virtual_display_dimension=4096 \
