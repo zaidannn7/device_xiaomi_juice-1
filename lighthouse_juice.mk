@@ -7,18 +7,17 @@
 # Inherit from juice device
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common lighthouse stuff.
+$(call inherit-product, vendor/lighthouse/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_juice
+PRODUCT_NAME := lighthouse_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Juice
 PRODUCT_MANUFACTURER := Xiaomi
 
-# GApps
-WITH_GAPPS := true
+# Gapps
 TARGET_GAPPS_ARCH := arm64
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
