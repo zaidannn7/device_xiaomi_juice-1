@@ -112,6 +112,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     vendor.display.disable_rotator_downscale=1 \
     debug.renderengine.backend=skiaglthreaded \
     debug.hwui.renderer=skiagl \
+    persist.sys.sf.native_mode=2 \
+    vendor.display.qdcm.disable_factory_mode=1 \
+    vendor.display.qdcm.mode_combine=1 \
     renderthread.skia.reduceopstasksplitting=true \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
