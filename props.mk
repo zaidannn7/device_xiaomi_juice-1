@@ -26,6 +26,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     qemu.hw.mainkeys=0 \
     ro.kernel.qemu.gles=0
 
+# Camera
+PRODUCT_PRODUCT_PROPERTIES += \
+     log.tag.CHIUSECASE=ERROR
+     persist.vendor.camera.logInfoMask=false
+
 # Cached app compaction
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.device_config.activity_manager.use_compaction=true
@@ -198,7 +203,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Printk
 PRODUCT_PRODUCT_PROPERTIES += \
-persist.vendor.console.silent.config=1
+    persist.vendor.console.silent.config=1
+
 
 # RCS
 PRODUCT_PRODUCT_PROPERTIES += \
