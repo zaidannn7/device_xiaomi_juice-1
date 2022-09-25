@@ -196,6 +196,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
+# Printk
+PRODUCT_PRODUCT_PROPERTIES += \
+persist.vendor.console.silent.config=1
+
 # RCS
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.rcs.supported=1
