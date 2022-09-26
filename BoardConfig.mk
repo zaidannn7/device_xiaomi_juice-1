@@ -86,19 +86,18 @@ BOARD_KERNEL_CMDLINE := \
 BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=default
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_CMDLINE += kpti=off
-
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_SECOND_OFFSET := 0xf00000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_KERNEL_OFFSET := 0x00008000
-BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_SEPARATED_DTBO := false
-BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADERS := kernel/xiaomi/juice
 TARGET_KERNEL_SOURCE := kernel/xiaomi/juice
-TARGET_KERNEL_CONFIG := vendor/chime_defconfig
+TARGET_KERNEL_CONFIG := guuji_defconfig
 
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
@@ -106,7 +105,11 @@ BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
+
+# Kernel Toolchain
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -149,6 +152,10 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
+
+# Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.default

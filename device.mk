@@ -136,10 +136,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
-# Pixel Wallpapers
-PRODUCT_PACKAGES += \
-    PixelWallpapers2021
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.juice
@@ -187,9 +183,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SHIPPING_API_LEVEL := 29
 BOARD_SHIPPING_API_LEVEL := 29
 
-# SystemUITests
-EXCLUDE_SYSTEMUI_TESTS := true
-
 # Target VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
 PRODUCT_EXTRA_VNDK_VERSIONS := 29 30
@@ -220,4 +213,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libvulkan
 
--include $(LOCAL_PATH)/props.mk
