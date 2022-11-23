@@ -7,11 +7,11 @@
 # Inherit from juice device
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common voltage stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit some common p404 stuff.
+$(call inherit-product, vendor/404/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_juice
+PRODUCT_NAME := p404_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Juice

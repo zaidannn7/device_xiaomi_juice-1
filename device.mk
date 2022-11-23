@@ -136,6 +136,10 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := bengal
+
 # Pixel Wallpapers
 PRODUCT_PACKAGES += \
     PixelWallpapers2021
