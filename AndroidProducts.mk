@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/p404_juice.mk
+    $(LOCAL_DIR)/yaap_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    p404_juice-user \
-    p404_juice-userdebug \
-    p404_juice-eng
+    yaap_juice-user \
+    yaap_juice-userdebug \
+    yaap_juice-eng
