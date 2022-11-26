@@ -97,7 +97,7 @@ BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADERS := kernel/xiaomi/juice
 TARGET_KERNEL_SOURCE := kernel/xiaomi/juice
-TARGET_KERNEL_CONFIG := vendor/lime-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/guuji_defconfig
 
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
