@@ -7,11 +7,11 @@
 # Inherit from juice device
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common yaap stuff.
-$(call inherit-product, vendor/krypton/config/common_full_phone.mk)
+# Inherit some common lighthouse stuff.
+$(call inherit-product, vendor/lighthouse/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := krypton_juice
+PRODUCT_NAME := lighthouse_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Juice
