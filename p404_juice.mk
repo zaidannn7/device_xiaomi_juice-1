@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
 # Inherit some common p404 stuff.
-$(call inherit-product, vendor/404/config/common.mk)
+$(call inherit-product, vendor/404/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := p404_juice
