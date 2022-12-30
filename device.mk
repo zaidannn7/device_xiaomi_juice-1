@@ -226,3 +226,7 @@ PRODUCT_PACKAGES += \
     libvulkan
 
 -include $(LOCAL_PATH)/props.mk
+
+# Disable extra StrictMode features on all non-engineering builds
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.sys.strictmode.disable=true
