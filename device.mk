@@ -140,10 +140,6 @@ PRODUCT_PACKAGES += \
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := bengal
 
-# Pixel Wallpapers
-PRODUCT_PACKAGES += \
-    PixelWallpapers2021
-
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.juice
