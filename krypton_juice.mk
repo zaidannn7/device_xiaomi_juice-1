@@ -19,6 +19,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 # Gapps
 TARGET_GAPPS_ARCH := arm64
+WITH_GMS := false
+WITH_GAPPS := false
+USE_GAPPS := false
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Resolution of Bootanimation
