@@ -61,7 +61,7 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SystemUI \
     Launcher3QuickStep
 
 # Fastbootd
