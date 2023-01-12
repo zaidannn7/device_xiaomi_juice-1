@@ -62,6 +62,7 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := speed-profile
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
+    Launcher3QuickStep
 
 # Fastbootd
 PRODUCT_PACKAGES += \
